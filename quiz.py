@@ -42,10 +42,6 @@ def submit():
 def goback():
     return redirect('/')
 
-@app.route('/ownquestion', methods = ['POST'])
-def ownquestion():
-    return redirect('/questions.html')
-
 @app.route('/questions.html')
 def questions():
     return render_template('questions.html')
